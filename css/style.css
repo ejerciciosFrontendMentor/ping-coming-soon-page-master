@@ -33,9 +33,19 @@ body {
   place-items: center;
   gap: 100px;
 }
+@media screen and (min-width: 1400px) {
+  .main {
+    gap: 50px;
+  }
+}
 
 .text {
   width: 320px;
+}
+@media screen and (min-width: 1400px) {
+  .text {
+    width: 600px;
+  }
 }
 .text__content {
   width: 100%;
@@ -48,11 +58,21 @@ body {
 .text__logo {
   transform: scale(0.6);
 }
+@media screen and (min-width: 1400px) {
+  .text__logo {
+    transform: scale(1);
+  }
+}
 .text__subTitle {
   color: var(--color-neutral-VeryDarkBlue);
   font-size: 28px;
   font-weight: 700;
   margin-bottom: 0;
+}
+@media screen and (min-width: 1400px) {
+  .text__subTitle {
+    font-size: 40px;
+  }
 }
 .text__subTitleWC {
   font-weight: 300;
@@ -62,6 +82,11 @@ body {
   color: var(--color-neutral-VeryDarkBlue);
   font-size: 15px;
 }
+@media screen and (min-width: 1400px) {
+  .text__text {
+    font-size: 16px;
+  }
+}
 
 .formEmail {
   width: 300px;
@@ -69,6 +94,16 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
+}
+@media screen and (min-width: 1400px) {
+  .formEmail {
+    width: 500px;
+    align-items: flex-start;
+    flex-direction: row;
+  }
+}
+.formEmail__contentInput {
+  width: 100%;
 }
 .formEmail__input {
   width: 100%;
@@ -80,6 +115,13 @@ body {
   outline: 0;
   transition: border 0.3s;
 }
+@media screen and (min-width: 1400px) {
+  .formEmail__input {
+    width: 300px;
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+}
 .formEmail__input--show {
   margin-bottom: 5px;
   border: 1px solid var(--color-secondary-LightRed);
@@ -90,9 +132,6 @@ body {
 }
 .formEmail__input::focus {
   border: 1px solid var(--color-secondary-PaleBlue);
-}
-.formEmail__contentInput {
-  width: 100%;
 }
 .formEmail__inputMsgError {
   display: none;
@@ -107,6 +146,12 @@ body {
   opacity: 0;
   visibility: hidden;
   transition: margin-bottom 0.3s, transform 0.3s, opacity 0.3s, visibility 0.3s;
+}
+@media screen and (min-width: 1400px) {
+  .formEmail__inputMsgError {
+    transition: transform 0.3s, opacity 0.3s, visibility 0.3s;
+    margin-bottom: 0;
+  }
 }
 .formEmail__inputMsgError--show {
   display: block;
@@ -125,7 +170,7 @@ body {
   outline: 0;
   cursor: pointer;
   background-color: var(--color-primary-Blue);
-  box-shadow: 0 0 1px var(--color-neutral-VeryDarkBlue);
+  box-shadow: 0 0 3px var(--color-neutral-VeryDarkBlue);
   transition: box-shadow 0.3s, background-color 0.3s;
 }
 .formEmail__btn:focus {
@@ -135,6 +180,11 @@ body {
 
 .contentImg {
   width: 320px;
+}
+@media screen and (min-width: 1400px) {
+  .contentImg {
+    width: 500px;
+  }
 }
 .contentImg__img {
   min-width: 100%;
